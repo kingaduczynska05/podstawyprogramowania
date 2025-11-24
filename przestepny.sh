@@ -1,5 +1,8 @@
-<<<<<<< HEAD
+
 #!/usr/bin/bash
-=======
 read -p "podaj rok:" rok
->>>>>>> e3d3a2a60daa829831dcbd58b2fb0662f155d4a4
+if (( rok % 4==0 && rok % 100 !=0 || rok % 400==0 )); then
+echo "rok jest przestepny."
+else
+echo "rok nie jest przestepny."
+fi #czy rok jest przestepny
