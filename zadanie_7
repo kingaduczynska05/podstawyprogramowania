@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-tablica=(3 8 11 4 7 10 15)
+tablica=(4 8 1 14 7 10 15)
 suma=0
 i=0
 for liczba in "${tablica[@]}";do
