@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+tablica=(3 8 11 4 7 10 15)
+suma=0
+i=0
+for liczba in "${tablica[@]}";do
+if [ $((liczba%2)) -eq 1 ];then
+suma=$((suma + liczba))
+fi
+done
+echo "suma liczb nieparzystych; $suma"

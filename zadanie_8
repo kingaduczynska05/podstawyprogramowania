@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+tablica=(1 5 9 2 8)
+a=${#tablica[@]}
+for ((i=0; i<n-1; i++));do
+for ((j=0; j<n-1-1;j++));do
+if [ ${tablica[j]} -gt ${tablica[j+1]} ];then
+temp=${tablica[j]}
+tablica[j]=${tablica[j+1]}
+tablica[j+1]=$temp
+fi
+done
+echo "sortowanie $((i+1)): ${tablica[@]}"
+done
+
+
