@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+x=0
+y=0
+for ((x=0; x<=1000 && y<=300; x++));do 
+((y=y+x))
+if ((x<200 || x>800 ));then
+echo $x
+echo $y
+fi
+done
+###
+
+
+
+
+
+
