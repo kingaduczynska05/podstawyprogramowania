@@ -1,11 +1,12 @@
 #!/bin/bash
 liczba=19
-while [ $liczba -ge 11 ]; 
+while [ $liczba -gt 10 ]; 
 do
-if [ $liczba -ge 12 ] && [ $liczba -le 17 ];then
+if [ $liczba != 11 ] && [ $liczba -lt 18 ];then
 liczba=$((liczba -1))
 continue
 fi
 echo $liczba
 liczba=$((liczba -1))
 done
+
