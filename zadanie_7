@@ -3,7 +3,7 @@ tablica=(4 8 1 14 7 10 15)
 suma=0
 i=0
 for i in "${tablica[@]}";do
-if [ $((i%2)) == 1 ];then
+if (( i%2 == 1 ));then
 suma=$((suma + i))
 fi
 done
